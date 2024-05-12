@@ -1,0 +1,1756 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct DOTSDynamicBone | DOTS Dynamic Bone V0.9.8 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct DOTSDynamicBone | DOTS Dynamic Bone V0.9.8 ">
+      
+      <meta name="description" content="This is a DOTSDynamicBone. This struct holds data used for calculations">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DOTS Dynamic Bone V0.9.8">
+            DOTS Dynamic Bone V0.9.8
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="DOTSDynamicBone.DOTSDynamicBone">
+
+
+
+  <h1 id="DOTSDynamicBone_DOTSDynamicBone" data-uid="DOTSDynamicBone.DOTSDynamicBone" class="text-break">
+Struct DOTSDynamicBone  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DOTSDynamicBone.html">DOTSDynamicBone</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DOTSDynamicBone.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This is a DOTSDynamicBone. This struct holds data used for calculations</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[BurstCompile]
+public struct DOTSDynamicBone : IComponentData, IQueryTypeParameter</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IComponentData</span></div>
+      <div><span class="xref">IQueryTypeParameter</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="DOTSDynamicBone_DOTSDynamicBone_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This is a DOTSDynamicBone. This struct holds data used for calculations</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_Disabled" data-uid="DOTSDynamicBone.DOTSDynamicBone.Disabled">
+  Disabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set this to true to disable calculations on the bone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Disabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>set to true to disable all particle calculations within the bone set</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UpdateLocalPositionOfParticles" data-uid="DOTSDynamicBone.DOTSDynamicBone.UpdateLocalPositionOfParticles">
+  UpdateLocalPositionOfParticles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateLocalPositionOfParticles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If set to true then the local positions of the particles will be overwritten.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UpdateLocalRotationOfParticles" data-uid="DOTSDynamicBone.DOTSDynamicBone.UpdateLocalRotationOfParticles">
+  UpdateLocalRotationOfParticles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateLocalRotationOfParticles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If set to true then the world positions of the particles will be overwritten.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UpdateTransformAsIfNoParent" data-uid="DOTSDynamicBone.DOTSDynamicBone.UpdateTransformAsIfNoParent">
+  UpdateTransformAsIfNoParent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateTransformAsIfNoParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UpdateTransformButFlipped" data-uid="DOTSDynamicBone.DOTSDynamicBone.UpdateTransformButFlipped">
+  UpdateTransformButFlipped
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateTransformButFlipped</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UpdateWorldPositionOfParticles" data-uid="DOTSDynamicBone.DOTSDynamicBone.UpdateWorldPositionOfParticles">
+  UpdateWorldPositionOfParticles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateWorldPositionOfParticles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If set to true then the world positions of the particles will be overwritten.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UpdateWorldRotationOfParticles" data-uid="DOTSDynamicBone.DOTSDynamicBone.UpdateWorldRotationOfParticles">
+  UpdateWorldRotationOfParticles
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If set to true then the world rotations of the particles will be overwritten.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateWorldRotationOfParticles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UseAnimatedLocalToRoot" data-uid="DOTSDynamicBone.DOTSDynamicBone.UseAnimatedLocalToRoot">
+  UseAnimatedLocalToRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseAnimatedLocalToRoot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>set this to true to have all calculated values be converted into AnimatedLocalToRootValues (required for it to not look weird, but disable it if you want, it's your game)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UseLocalTransformOnSkinMesh" data-uid="DOTSDynamicBone.DOTSDynamicBone.UseLocalTransformOnSkinMesh">
+  UseLocalTransformOnSkinMesh
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseLocalTransformOnSkinMesh</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_UseNaturalColliders" data-uid="DOTSDynamicBone.DOTSDynamicBone.UseNaturalColliders">
+  UseNaturalColliders
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseNaturalColliders</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_BoneTotalLength" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_BoneTotalLength">
+  m_BoneTotalLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_BoneTotalLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>total length of the bone</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Core" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Core">
+  m_Core
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_Core</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd><p>This is a ParticleTransform that stores the data related to the m_RigComponentEntity Transform</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Damping" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Damping">
+  m_Damping
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Damping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the bones slowed down.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_DistanceDisable" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_DistanceDisable">
+  m_DistanceDisable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_DistanceDisable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_DistanceToObject" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_DistanceToObject">
+  m_DistanceToObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_DistanceToObject</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>how far the Referenced Entity has to be in order for m_DistantDisable to be true</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_DistantDisabled" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_DistantDisabled">
+  m_DistantDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_DistantDisabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Elasticity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Elasticity">
+  m_Elasticity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Elasticity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the force applied to return each bone to original orientation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_EndLength" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_EndLength">
+  m_EndLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_EndLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>If End Length is not zero, an extra bone is generated at the end of transform hierarchy.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_EndOffset" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_EndOffset">
+  m_EndOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_EndOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>If End Offset is not zero, an extra bone is generated at the end of transform hierarchy.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Force" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Force">
+  m_Force
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_Force</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>The force apply to bones.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_FreezeAxis" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_FreezeAxis">
+  m_FreezeAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOTSDynamicBone.FreezeAxis m_FreezeAxis</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a>.<a class="xref" href="DOTSDynamicBone.DOTSDynamicBone.FreezeAxis.html">FreezeAxis</a></dt>
+    <dd><p>Constrain bones to move on specified plane.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Friction" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Friction">
+  m_Friction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Friction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the bones slowed down when collide.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_GlobalForce" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_GlobalForce">
+  m_GlobalForce
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_GlobalForce</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>Constant force applied by the world to all entities like gravity. NOTE: this is only used with DDB Collision</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Gravity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Gravity">
+  m_Gravity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_Gravity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>The force apply to bones. Partial force apply to character's initial pose is cancelled out.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Inert" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Inert">
+  m_Inert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Inert</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much character's position change is ignored in physics simulation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_LocalGravity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_LocalGravity">
+  m_LocalGravity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_LocalGravity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>local gravity of the bone</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_MaxRestLength" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_MaxRestLength">
+  m_MaxRestLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_MaxRestLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>NOT IMPLMENTED, TODO: determine if I want to implement this...</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ObjectMove" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ObjectMove">
+  m_ObjectMove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_ObjectMove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ObjectMovePrev" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ObjectMovePrev">
+  m_ObjectMovePrev
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_ObjectMovePrev</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ObjectScale" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ObjectScale">
+  m_ObjectScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_ObjectScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>scale of the Entity</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ParentAnimatedLocalToRootIndex" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ParentAnimatedLocalToRootIndex">
+  m_ParentAnimatedLocalToRootIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_ParentAnimatedLocalToRootIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>This is the Root DynamicBone Particle's parent index in the AnimatedLocalToRoot DynamicBuffer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ParticleResetOptions" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ParticleResetOptions">
+  m_ParticleResetOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public DOTSDynamicBoneParticleResetOptions m_ParticleResetOptions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetOptions.html">DOTSDynamicBoneParticleResetOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Radius" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Radius">
+  m_Radius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Radius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Each bone can be a sphere to collide with colliders. Radius describe sphere's size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ReferenceObjectEntity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ReferenceObjectEntity">
+  m_ReferenceObjectEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_ReferenceObjectEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd><p>The Entity to use in the DistantDisable determination</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_ReferenceObjectTransform" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_ReferenceObjectTransform">
+  m_ReferenceObjectTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_ReferenceObjectTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd><p>A PArticleTransform that represents the ReferendEntity's Transform</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_RigComponentEntity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_RigComponentEntity">
+  m_RigComponentEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_RigComponentEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd><p>This is the entity Entity that contained the RigComponent. Most likely this will be the same as the m_RootEntity</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_RigRootEntity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_RigRootEntity">
+  m_RigRootEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_RigRootEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_RootAnimatedLocalToRootIndex" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_RootAnimatedLocalToRootIndex">
+  m_RootAnimatedLocalToRootIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_RootAnimatedLocalToRootIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>This is the index that the Root Entity's AnimatedLocalToRootIndex index. This will always most likly be 0 since it is the root</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_RootEntity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_RootEntity">
+  m_RootEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_RootEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd><p>This is the Entity if the root transform (not to be confused with the RootBone Entity)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_RootParentEntity" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_RootParentEntity">
+  m_RootParentEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_RootParentEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd><p>The root DynamicBone has a parent, and this Entity is that parent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_RootParentTransform" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_RootParentTransform">
+  m_RootParentTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_RootParentTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Stiffness" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Stiffness">
+  m_Stiffness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Stiffness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much bone's original orientation are preserved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_UpdateDataFrom" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_UpdateDataFrom">
+  m_UpdateDataFrom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOTSDynamicBoneClass.UpdateDataFrom m_UpdateDataFrom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a>.<a class="xref" href="DOTSDynamicBone.DOTSDynamicBoneClass.UpdateDataFrom.html">UpdateDataFrom</a></dt>
+    <dd><p>An option to choose where the data updates from. This was implemented</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_UpdateMode" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_UpdateMode">
+  m_UpdateMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOTSDynamicBone.UpdateMode m_UpdateMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a>.<a class="xref" href="DOTSDynamicBone.DOTSDynamicBone.UpdateMode.html">UpdateMode</a></dt>
+    <dd><p>Internal physics simulation mode.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_UpdateRate" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_UpdateRate">
+  m_UpdateRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_UpdateRate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Internal physics simulation rate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_m_Weight" data-uid="DOTSDynamicBone.DOTSDynamicBone.m_Weight">
+  m_Weight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Weight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>weight of bone.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="DOTSDynamicBone_DOTSDynamicBone_Default_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Default*"></a>
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_Default" data-uid="DOTSDynamicBone.DOTSDynamicBone.Default">
+  Default
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DOTSDynamicBone Default { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="DOTSDynamicBone_DOTSDynamicBone_Create_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Create*"></a>
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_Create_Unity_Entities_IBaker_DOTSDynamicBone_DOTSDynamicBoneClass_System_Collections_Generic_List_UnityEngine_SkinnedMeshRenderer__System_Single_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Create(Unity.Entities.IBaker,DOTSDynamicBone.DOTSDynamicBoneClass,System.Collections.Generic.List{UnityEngine.SkinnedMeshRenderer},System.Single)">
+  Create(IBaker, DOTSDynamicBoneClass, List&lt;SkinnedMeshRenderer&gt;, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>V0.8.3+ Creates a DOTSDynamicBone using the given information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DOTSDynamicBone Create(IBaker baker, DOTSDynamicBoneClass boneComponent, List&lt;SkinnedMeshRenderer&gt; meshRenderers, float maxRestLength = 0.2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baker</code> <span class="xref">IBaker</span></dt>
+    <dd></dd>
+    <dt><code>boneComponent</code> <a class="xref" href="DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a></dt>
+    <dd><p>DOTSDynamicBoneClass</p>
+</dd>
+    <dt><code>meshRenderers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">SkinnedMeshRenderer</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>maxRestLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a></dt>
+    <dd><p>DOTSDynamicBone</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_DOTSDynamicBone_Disable_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Disable*"></a>
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_Disable_System_Boolean__Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___System_Int32_System_Int32_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Disable(System.Boolean@,Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@,System.Int32,System.Int32)">
+  Disable(ref bool, ref DynamicBuffer&lt;Particle&gt;, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables the bone and all the given Particles. (NOTE: the particles should be associated with the bones)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void Disable(ref bool Disabled, ref DynamicBuffer&lt;Particle&gt; m_Particles, int start, int end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Disabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>m_Particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd><p>particles to be disabled</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_DOTSDynamicBone_Enable_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Enable*"></a>
+
+  <h3 id="DOTSDynamicBone_DOTSDynamicBone_Enable_System_Boolean__Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___System_Int32_System_Int32_" data-uid="DOTSDynamicBone.DOTSDynamicBone.Enable(System.Boolean@,Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@,System.Int32,System.Int32)">
+  Enable(ref bool, ref DynamicBuffer&lt;Particle&gt;, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables the bone and all the given Particles. (NOTE: the particles should be associated with the bones)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void Enable(ref bool Disabled, ref DynamicBuffer&lt;Particle&gt; m_Particles, int start, int end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Disabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>m_Particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd><p>particles to be enabled</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

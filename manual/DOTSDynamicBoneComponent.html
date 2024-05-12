@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DOTS Dynamic Bone Component | DOTS Dynamic Bone V0.9.8 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DOTS Dynamic Bone Component | DOTS Dynamic Bone V0.9.8 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DOTS Dynamic Bone V0.9.8">
+            DOTS Dynamic Bone V0.9.8
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dots-dynamic-bone-component">DOTS Dynamic Bone Component</h1>
+
+<p>The <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a> is a <code>Monobehaviour</code> is used to create a <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a>. The data it contains is used in the editor and during runtime. In terms of the Editor there are 2 Lists called <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html#DOTSDynamicBone_DOTSDynamicBoneClass_eParticles">eParticles</a> (short for editor particles) and <code>rParticles</code> (short for runtime particles). <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html#DOTSDynamicBone_DOTSDynamicBoneClass_eParticles">eParticles</a> are responsible for containing information used in both the Editor and at runtime during the baking process. <code>rParticles</code> are mainly used for debugging in the editor and will be visible if <code>DOTSDYNAMICBONE_DEBUG</code> is defined in the Compiling Systems.</p>
+<p>NOTE: The information below will go over some fields and thier quirks, if a field is not listed below then please the Api Documentation for more info.</p>
+<h2 id="configurations">Configurations</h2>
+<h3 id="default">Default</h3>
+<p>To get DOTS Dynamic Bone working all newly created <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a>s are initialized with a Default configuration:</p>
+<p><img src="../images/DOTSDynamicBoneComponentDefaultExample.png" alt="DOTSDynamicBoneComponentDefaultExample.png"></p>
+<p>This should be enough to get you started however, if your not using physics it is highly recommended to not set <code>UpdateLocalPositions</code>, <code>UpdateLocationRotations</code>, <code>UseNaturalColliders</code>, <code>UpdateTransformsAsIfNoParent</code>, &amp; <code>UpdateTransformButFlipLocalAndWorld</code> to true. We will go over those settings later in the doc.</p>
+<p><strong>NOTE</strong>: For more information or if the image isn't loading please check the <code>InitializeDefault</code> function in <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a></p>
+<h3 id="using-physics">Using Physics</h3>
+<p>if you plan on using physics then there are a few things you must know. First is how to setup the Transform update boolean parameters like below:</p>
+<p><strong>NOTE</strong>: Be sure to add the <em>DOTSDYNAMICBONE_UNITY_PHYSICS</em> compiler definition in your project.</p>
+<p><strong>NOTE</strong>: When using the PhysicsDebugDisplay, since DOTSDynamicBones executes <em>after</em> that system the drawn shapes will look like they are a frame behind.</p>
+<p><img src="../images/DOTSDynamicBoneComponentPhysicsExample.png" alt="DOTSDynamicBoneComponentPhysicsExample.png"></p>
+<p><strong>NOTE</strong>: For more information or if the image isn't loading please check the <code>InitializeDefault</code> function in <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a></p>
+<p>Then you have to make sure your Entity has a <code>PhysicsShape|UnityEngine.Collider</code> and a <code>PhysicsBody|UnityEngine.RigidBody</code>:</p>
+<p><img src="../images/DOTSDynamicBoneComponentPhysicsSetupExample.png" alt="DOTSDynamicBoneComponentPhysicsSetupExample.png"></p>
+<p><strong>NOTE</strong>: besure your collision filter is setup so the colliders don't interact with each (or you can setup better colliders then me :) )</p>
+<p>If there are any Entities that do not have Physics Components but is a child of the <code>RootBone</code> in <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a> then you must add that Entity in the Exclusions List with <code>ExcludeFromCollision</code> enabled (otherwise things may break a bit). Please go to the Exclusions section for more information</p>
+<h2 id="fields--parameters"><strong>Fields &amp; Parameters</strong></h2>
+<h3 id="dots-dynamic-bones-list"><strong>DOTS Dynamic Bones (List)</strong></h3>
+<p>This list will contain all the <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a> data for the associated Entity. For each element in this list a new Entity with all the <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBone.html">DOTSDynamicBone</a> data will be recreated and linked to the associated Entity.</p>
+<p><img src="../images/LinkedDOTSDynamicBoneExample.png" alt="LinkedExample"></p>
+<h3 id="name"><strong>Name</strong></h3>
+<p>The name field is used in both the editor and runtime. In the Editor it is used to differenciate between <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a> data within a <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneComponent.html">DOTSDynamicBoneComponent</a>. During runtime the name of the entity is constructed in the folloing way:</p>
+<p><code>authoring.name + &quot;_DOTSDynamicBone_&quot; + m_DOTSDynamicBone.Name</code></p>
+<p>This was done to help ensure the uniqueness of names without using a uuid (though technically a entity with a duplicate name can occur if you name everything the same)</p>
+<h3 id="update-data-from"><strong>Update Data From</strong></h3>
+<p>This field will almost always be set to <code>AnimatedLocalToWorld</code> but feel free to play around with it or add your own!</p>
+<h3 id="transform-update-settings"><strong>Transform Update Settings</strong></h3>
+<p>This include the fields and descriptions:</p>
+<ul>
+<li>Use Natural Colliders - This is used when you want physics calculations to be enabled on each <a class="xref" href="../api/DOTSDynamicBone.Particle.html">Particle</a></li>
+<li>Update World Positions - This should always be true. It tells the <a class="xref" href="../api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.html">DOTSDynamicBoneVisualPhysicalOverrideSystem</a> to update <code>LocalToWorld</code> position data.</li>
+<li>Update World Rotations - This should always be true. It tells the <a class="xref" href="../api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.html">DOTSDynamicBoneVisualPhysicalOverrideSystem</a> to update <code>LocalToWorld</code> rotation data.</li>
+<li>Update Local Positions - This should be true if <code>UseNaturalColliders</code> is true. It tells the <a class="xref" href="../api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.html">DOTSDynamicBoneVisualPhysicalOverrideSystem</a> to update <code>LocalTransform</code> position data.</li>
+<li>Update Local Rotations - This should be true if <code>UseNaturalColliders</code> is true. It tells the <a class="xref" href="../api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.html">DOTSDynamicBoneVisualPhysicalOverrideSystem</a> to update <code>LocalTransform</code> rotation data.</li>
+<li>Update Transform But Flip Local And World - In practice this should never be enabled. feel free to enable it and see what happens :)</li>
+<li>Update Transform As If No Parent - This should be true if <code>UseNaturalColliders</code> is true. This notifies systems that some <a class="xref" href="../api/DOTSDynamicBone.Particle.html">Particle</a>s may be unparented and must adjust how they process thier data.</li>
+<li>Used AnimatedLocalLocalToRoot - this is always true (see code for more info)</li>
+</ul>
+<h3 id="reset-options"><strong>Reset Options</strong></h3>
+<p>each bool3 is used in the <a class="xref" href="../api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.html">DOTSDynamicBoneParticleResetSystem</a> and each boolean value is setup as:</p>
+<ul>
+<li>x: true = reset.</li>
+<li>y: true = reset on every frame if true else only in one frame.</li>
+<li>z: true = execute only on root particle.</li>
+</ul>
+<p>In pratice you if physics isn't enabled then you have:</p>
+<p><code>ResetWorldPosition = new bool3(true,true,false);</code></p>
+<p><code>ResetWorldRotation = new bool3(true,true,false);</code></p>
+<p>otherwise you have:</p>
+<p><code>ResetLocalPosition = new bool3(true,true,false);</code></p>
+<p><code>ResetLocalRotation = new bool3(true,true,false);</code></p>
+<h3 id="rig-component"><strong>Rig Component</strong></h3>
+<p>The RigComponent field is associated with SkinnedMeshRenderers and such.</p>
+<h3 id="root-bone"><strong>Root Bone</strong></h3>
+<p>The Root Bone refers to Entity that will be used to create Particles from. The Entity will be the <code>RootBone</code> and the children of that Entity will be the <a class="xref" href="../api/DOTSDynamicBone.Particle.html">Particle</a>s. Depending on your <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneClass.html">DOTSDynamicBoneClass</a> settings you may create Particles with <em>RootBoneLike</em> values.</p>
+<p><em>RootBoneLike</em> = a Particle with a <code>m_ParentParticleIndex &lt; 0 &amp;&amp; m_LastParentParticleIndex &lt; 0</code></p>
+<h3 id="colliders"><strong>Colliders</strong></h3>
+<p>If this list is not empty then the Particles generated from the DOTSDynamicBoneClass will only collide with Entities that contains the <a class="xref" href="../api/DOTSDynamicBone.Collision.DOTSDynamicBoneCollider.html">DOTSDynamicBoneCollider</a> within this list.</p>
+<h3 id="exclusions"><strong>Exclusions</strong></h3>
+<p>This list holds information regarding which Entities will be excluded and how they will be excluded from calculations.</p>
+<h5 id="exclude-from-particle-creation">Exclude From Particle Creation</h5>
+<p>If this is set to true then the Entity will not have a particle created for it. You should set this to true if you don't plan on having the Entity being a part of the Particle Simulation later.</p>
+<h5 id="exclude-children-from-particle-creation"><strong>Exclude Children From Particle Creation</strong></h5>
+<p>If this is set to true then the Entity's children will be excluded from Particle creation. You should set this to true if you don't plan on having the Entity being a part of the Particle Simulation later.</p>
+<h5 id="disable-particle-physics"><strong>Disable Particle Physics</strong></h5>
+<p>If this is set to true then After Initialization the Paticle will be excluded from Particle Simulation however, it can be renabled by setting <code>Particle.m_ExcludeFromParticlePhysics</code> to true.</p>
+<h5 id="disable-children-from-particle-physics"><strong>Disable Children From Particle Physics</strong></h5>
+<p>If this is set to true then After Initialization the Paticle's children will be excluded from Particle Simulation however, it can be renabled by setting <code>Particle.m_ExcludeFromParticlePhysics</code> to true.</p>
+<h5 id="exclude-from-collision"><strong>Exclude From Collision</strong></h5>
+<p>If this is set to true and UseNaturalColliders is set to true then Physics Collisions calculations will be skipped for the associated Entity.</p>
+<h5 id="exclude-children-from-collision"><strong>Exclude Children From Collision</strong></h5>
+<p>If this is set to true and UseNaturalColliders is set to true then Physics Collisions calculations will be skipped for the associated Entity's children.</p>
+<p>For more information check out the API reference for <a class="xref" href="../api/DOTSDynamicBone.DOTSDynamicBoneComponent.html">DOTSDynamicBoneComponent</a></p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2043 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Particle | DOTS Dynamic Bone V0.9.8 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Particle | DOTS Dynamic Bone V0.9.8 ">
+      
+      <meta name="description" content="This contains all the data related to a section the DOTSDynamicBone. Here the data is store and calculations are performed on the data">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DOTS Dynamic Bone V0.9.8">
+            DOTS Dynamic Bone V0.9.8
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="DOTSDynamicBone.Particle">
+
+
+
+  <h1 id="DOTSDynamicBone_Particle" data-uid="DOTSDynamicBone.Particle" class="text-break">
+Struct Particle  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DOTSDynamicBone.html">DOTSDynamicBone</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DOTSDynamicBone.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This contains all the data related to a section the DOTSDynamicBone. Here the data is store and calculations are performed on the data</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[BurstCompile]
+public struct Particle : IBufferElementData</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IBufferElementData</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="DOTSDynamicBone_Particle_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This contains all the data related to a section the DOTSDynamicBone. Here the data is store and calculations are performed on the data</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_AnimatedLocalToRootIndex" data-uid="DOTSDynamicBone.Particle.AnimatedLocalToRootIndex">
+  AnimatedLocalToRootIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnimatedLocalToRootIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index relative to the Core Entity's AnimatedLocalToRoot and AnimatedLocalToWorld DynamicBuffer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_h_Damping" data-uid="DOTSDynamicBone.Particle.h_Damping">
+  h_Damping
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float h_Damping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>These are temporary values used when switching from a disabed/enabled mode</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_h_Elasticity" data-uid="DOTSDynamicBone.Particle.h_Elasticity">
+  h_Elasticity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float h_Elasticity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>These are temporary values used when switching from a disabed/enabled mode</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_h_Friction" data-uid="DOTSDynamicBone.Particle.h_Friction">
+  h_Friction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float h_Friction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>These are temporary values used when switching from a disabed/enabled mode</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_h_Inert" data-uid="DOTSDynamicBone.Particle.h_Inert">
+  h_Inert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float h_Inert</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>These are temporary values used when switching from a disabed/enabled mode</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_h_Stiffness" data-uid="DOTSDynamicBone.Particle.h_Stiffness">
+  h_Stiffness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float h_Stiffness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>These are temporary values used when switching from a disabed/enabled mode</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_AnimatedLocalToWorldTransform" data-uid="DOTSDynamicBone.Particle.m_AnimatedLocalToWorldTransform">
+  m_AnimatedLocalToWorldTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_AnimatedLocalToWorldTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd><p>The &quot;Transform&quot; of the Entity the Particle represent that has been converted to AnimatedLocalToRoot space.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_BoneLength" data-uid="DOTSDynamicBone.Particle.m_BoneLength">
+  m_BoneLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_BoneLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>length of the bone at this particle</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Bound" data-uid="DOTSDynamicBone.Particle.m_Bound">
+  m_Bound
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransformsExtensions.Bound m_Bound</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Egg.Extensions.Transforms.TransformsExtensions.html">TransformsExtensions</a>.<a class="xref" href="Egg.Extensions.Transforms.TransformsExtensions.Bound.html">Bound</a></dt>
+    <dd><p>type of bound for collision calculations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Damping" data-uid="DOTSDynamicBone.Particle.m_Damping">
+  m_Damping
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Damping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the particle slowed down.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Elasticity" data-uid="DOTSDynamicBone.Particle.m_Elasticity">
+  m_Elasticity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Elasticity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the force applied to return each particle to original orientation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_EndOffset" data-uid="DOTSDynamicBone.Particle.m_EndOffset">
+  m_EndOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_EndOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>Used for internal calculations(do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_ExcludeFromCollision" data-uid="DOTSDynamicBone.Particle.m_ExcludeFromCollision">
+  m_ExcludeFromCollision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_ExcludeFromCollision</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_ExcludeFromParticlePhysics" data-uid="DOTSDynamicBone.Particle.m_ExcludeFromParticlePhysics">
+  m_ExcludeFromParticlePhysics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_ExcludeFromParticlePhysics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Friction" data-uid="DOTSDynamicBone.Particle.m_Friction">
+  m_Friction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Friction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the particle slowed down when collide.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Inert" data-uid="DOTSDynamicBone.Particle.m_Inert">
+  m_Inert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Inert</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much particle's position change is ignored in physics simulation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_InitLocalPosition" data-uid="DOTSDynamicBone.Particle.m_InitLocalPosition">
+  m_InitLocalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_InitLocalPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>Initial Local Position Used for internal calculations(do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_InitLocalRotation" data-uid="DOTSDynamicBone.Particle.m_InitLocalRotation">
+  m_InitLocalRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public quaternion m_InitLocalRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">quaternion</span></dt>
+    <dd><p>Used for internal calculations(do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_InitWorldPosition" data-uid="DOTSDynamicBone.Particle.m_InitWorldPosition">
+  m_InitWorldPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_InitWorldPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>initial position of particle used for internal calculations(do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_InitWorldRotation" data-uid="DOTSDynamicBone.Particle.m_InitWorldRotation">
+  m_InitWorldRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public quaternion m_InitWorldRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">quaternion</span></dt>
+    <dd><p>initial rotation of particle used for internal calculations(do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_LastExcludeFromParticlePhysics" data-uid="DOTSDynamicBone.Particle.m_LastExcludeFromParticlePhysics">
+  m_LastExcludeFromParticlePhysics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_LastExcludeFromParticlePhysics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_LastParentParticleIndex" data-uid="DOTSDynamicBone.Particle.m_LastParentParticleIndex">
+  m_LastParentParticleIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_LastParentParticleIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The last known index of the parent Particle (-1 = the parent info is in the bone data)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_ParentEntity" data-uid="DOTSDynamicBone.Particle.m_ParentEntity">
+  m_ParentEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_ParentEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd><p>the parent entity of this particle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_ParentParticleIndex" data-uid="DOTSDynamicBone.Particle.m_ParentParticleIndex">
+  m_ParentParticleIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_ParentParticleIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the parent Particle (-1 = the parent info is in the bone data)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Position" data-uid="DOTSDynamicBone.Particle.m_Position">
+  m_Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_Position</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>Current Position Used for internal calculations (do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_PrevPosition" data-uid="DOTSDynamicBone.Particle.m_PrevPosition">
+  m_PrevPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 m_PrevPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>Previous Position Used for internal calculations(do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_PrevRotation" data-uid="DOTSDynamicBone.Particle.m_PrevRotation">
+  m_PrevRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public quaternion m_PrevRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">quaternion</span></dt>
+    <dd><p>Previous Rotation Used for internal calculations (do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Radius" data-uid="DOTSDynamicBone.Particle.m_Radius">
+  m_Radius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Radius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Each particle can be a sphere to collide with colliders. Radius describe sphere's size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Rotation" data-uid="DOTSDynamicBone.Particle.m_Rotation">
+  m_Rotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public quaternion m_Rotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">quaternion</span></dt>
+    <dd><p>Rotation Used for internal calculations (do not touch unless you know what your doing)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Stiffness" data-uid="DOTSDynamicBone.Particle.m_Stiffness">
+  m_Stiffness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_Stiffness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much particle's original orientation are preserved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_Transform" data-uid="DOTSDynamicBone.Particle.m_Transform">
+  m_Transform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleTransform m_Transform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.ParticleTransform.html">ParticleTransform</a></dt>
+    <dd><p>The &quot;Transform&quot; of the Entity the Particle represents</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_TransformEntity" data-uid="DOTSDynamicBone.Particle.m_TransformEntity">
+  m_TransformEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity m_TransformEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Entity</span></dt>
+    <dd><p>Entity that the Particle epresents</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_TransformLocalToWorldMatrix" data-uid="DOTSDynamicBone.Particle.m_TransformLocalToWorldMatrix">
+  m_TransformLocalToWorldMatrix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4x4 m_TransformLocalToWorldMatrix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Matrix4x4</span></dt>
+    <dd><p>the &quot;Transform's&quot; LocalToWorld natrux</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DOTSDynamicBone_Particle_m_isCollide" data-uid="DOTSDynamicBone.Particle.m_isCollide">
+  m_isCollide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_isCollide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="DOTSDynamicBone_Particle_Null_" data-uid="DOTSDynamicBone.Particle.Null*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Null" data-uid="DOTSDynamicBone.Particle.Null">
+  Null
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Particle Null { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>returns a &quot;Null&quot; particle</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="DOTSDynamicBone_Particle_CalculateParameters_" data-uid="DOTSDynamicBone.Particle.CalculateParameters*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_CalculateParameters" data-uid="DOTSDynamicBone.Particle.CalculateParameters">
+  CalculateParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public void CalculateParameters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_CalculateParameters_" data-uid="DOTSDynamicBone.Particle.CalculateParameters*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_CalculateParameters_DOTSDynamicBone_Particle__" data-uid="DOTSDynamicBone.Particle.CalculateParameters(DOTSDynamicBone.Particle@)">
+  CalculateParameters(ref Particle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the parameters based on internal data values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void CalculateParameters(ref Particle p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>reference of a Particle</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_CheckExclude_" data-uid="DOTSDynamicBone.Particle.CheckExclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_CheckExclude_System_Collections_Generic_List_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.CheckExclude(System.Collections.Generic.List{DOTSDynamicBone.Particle}@)">
+  CheckExclude(ref List&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckExclude(ref List&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_CheckExclude_" data-uid="DOTSDynamicBone.Particle.CheckExclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_CheckExclude_System_Int32__System_Collections_Generic_List_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.CheckExclude(System.Int32@,System.Collections.Generic.List{DOTSDynamicBone.Particle}@)">
+  CheckExclude(in int, ref List&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles Including/Excluding particles within a List</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckExclude(in int pIndex, ref List&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>index of the Particle to start at</p>
+</dd>
+    <dt><code>particles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd><p>particles to rummage through</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_CheckExclude_" data-uid="DOTSDynamicBone.Particle.CheckExclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_CheckExclude_System_Int32__Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.CheckExclude(System.Int32@,Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@)">
+  CheckExclude(in int, ref DynamicBuffer&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void CheckExclude(in int pIndex, ref DynamicBuffer&lt;Particle&gt; _particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>_particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_CheckExclude_" data-uid="DOTSDynamicBone.Particle.CheckExclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_CheckExclude_Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.CheckExclude(Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@)">
+  CheckExclude(ref DynamicBuffer&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public void CheckExclude(ref DynamicBuffer&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Create_" data-uid="DOTSDynamicBone.Particle.Create*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Create_Unity_Entities_IBaker_UnityEngine_Transform_UnityEngine_Transform_System_Collections_Generic_List_UnityEngine_SkinnedMeshRenderer__DOTSDynamicBone_Rig_RigComponent_Unity_Mathematics_float3_System_Single_System_Int32_System_Single__System_Boolean_System_Boolean_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Boolean_" data-uid="DOTSDynamicBone.Particle.Create(Unity.Entities.IBaker,UnityEngine.Transform,UnityEngine.Transform,System.Collections.Generic.List{UnityEngine.SkinnedMeshRenderer},DOTSDynamicBone.Rig.RigComponent,Unity.Mathematics.float3,System.Single,System.Int32,System.Single@,System.Boolean,System.Boolean,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+  Create(IBaker, Transform, Transform, List&lt;SkinnedMeshRenderer&gt;, RigComponent, float3, float, int, ref float, bool, bool, int, float, float, float, float, float, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Particle using the given arguments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Particle Create(IBaker baker, Transform t, Transform tParent, List&lt;SkinnedMeshRenderer&gt; m_Renderers, RigComponent rig, float3 endOffset, float endLength, int array_index, ref float m_BoneTotalLength, bool excludeFromParticlePhysics = false, bool excludeFromCollision = false, int parentIndex = -1, float damping = 0, float elasticity = 0, float stiffness = 0, float inert = 0, float friction = 0, float radius = 0, bool isCollide = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baker</code> <span class="xref">IBaker</span></dt>
+    <dd><p>IBaker</p>
+</dd>
+    <dt><code>t</code> <span class="xref">Transform</span></dt>
+    <dd><p>the Referenced Transform that the particle will represent</p>
+</dd>
+    <dt><code>tParent</code> <span class="xref">Transform</span></dt>
+    <dd><p>parent of t Transform</p>
+</dd>
+    <dt><code>m_Renderers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">SkinnedMeshRenderer</span>&gt;</dt>
+    <dd><p>SkinnedMeshRenderer</p>
+</dd>
+    <dt><code>rig</code> <a class="xref" href="DOTSDynamicBone.Rig.RigComponent.html">RigComponent</a></dt>
+    <dd><p>RigComponent</p>
+</dd>
+    <dt><code>endOffset</code> <span class="xref">float3</span></dt>
+    <dd><p>endOffset</p>
+</dd>
+    <dt><code>endLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>endLength</p>
+</dd>
+    <dt><code>array_index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>index Particle will be in DynamicBuffer array</p>
+</dd>
+    <dt><code>m_BoneTotalLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Total Lenght of the Bone (this is usually handled automatically)</p>
+</dd>
+    <dt><code>excludeFromParticlePhysics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>exclude the particle from calculations</p>
+</dd>
+    <dt><code>excludeFromCollision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>set this to true to exclude this particle from collision</p>
+</dd>
+    <dt><code>parentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>parent index of the particle within the DynamicBuffer. (This is setup automatically and should not be modified)</p>
+</dd>
+    <dt><code>damping</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the particle slowed down.</p>
+</dd>
+    <dt><code>elasticity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the force applied to return each particle to original orientation.</p>
+</dd>
+    <dt><code>stiffness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much particle's original orientation are preserved.</p>
+</dd>
+    <dt><code>inert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the particle slowed down.</p>
+</dd>
+    <dt><code>friction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>How much the particle slowed down when collide.</p>
+</dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Each particle can be a sphere to collide with colliders. Radius describe sphere's size.</p>
+</dd>
+    <dt><code>isCollide</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the particle is colliding</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>Particle</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Exclude_" data-uid="DOTSDynamicBone.Particle.Exclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Exclude_DOTSDynamicBone_Particle__System_Collections_Generic_List_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Exclude(DOTSDynamicBone.Particle@,System.Collections.Generic.List{DOTSDynamicBone.Particle}@)">
+  Exclude(ref Particle, ref List&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Excludes a Particle from Particle Simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Exclude(ref Particle p, ref List&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>the reference Particle</p>
+</dd>
+    <dt><code>particles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd><p>a List of particles to rummage through</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Exclude_" data-uid="DOTSDynamicBone.Particle.Exclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Exclude_DOTSDynamicBone_Particle__Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Exclude(DOTSDynamicBone.Particle@,Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@)">
+  Exclude(ref Particle, ref DynamicBuffer&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void Exclude(ref Particle p, ref DynamicBuffer&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd></dd>
+    <dt><code>particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Exclude_" data-uid="DOTSDynamicBone.Particle.Exclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Exclude_System_Collections_Generic_List_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Exclude(System.Collections.Generic.List{DOTSDynamicBone.Particle}@)">
+  Exclude(ref List&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exclude(ref List&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Exclude_" data-uid="DOTSDynamicBone.Particle.Exclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Exclude_Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Exclude(Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@)">
+  Exclude(ref DynamicBuffer&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Excludes the Particle from calculations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public void Exclude(ref DynamicBuffer&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Include_" data-uid="DOTSDynamicBone.Particle.Include*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Include_DOTSDynamicBone_Particle__System_Collections_Generic_List_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Include(DOTSDynamicBone.Particle@,System.Collections.Generic.List{DOTSDynamicBone.Particle}@)">
+  Include(ref Particle, ref List&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Includes a Particle from Particle Simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Include(ref Particle p, ref List&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>the reference Particle</p>
+</dd>
+    <dt><code>particles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd><p>a List of particles to rummage through</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Include_" data-uid="DOTSDynamicBone.Particle.Include*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Include_DOTSDynamicBone_Particle__Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Include(DOTSDynamicBone.Particle@,Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@)">
+  Include(ref Particle, ref DynamicBuffer&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void Include(ref Particle p, ref DynamicBuffer&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd></dd>
+    <dt><code>particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Include_" data-uid="DOTSDynamicBone.Particle.Include*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Include_System_Collections_Generic_List_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Include(System.Collections.Generic.List{DOTSDynamicBone.Particle}@)">
+  Include(ref List&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Include(ref List&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Include_" data-uid="DOTSDynamicBone.Particle.Include*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Include_Unity_Entities_DynamicBuffer_DOTSDynamicBone_Particle___" data-uid="DOTSDynamicBone.Particle.Include(Unity.Entities.DynamicBuffer{DOTSDynamicBone.Particle}@)">
+  Include(ref DynamicBuffer&lt;Particle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Includes the Particles in calculations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public void Include(ref DynamicBuffer&lt;Particle&gt; particles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particles</code> <span class="xref">DynamicBuffer</span>&lt;<a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_IsRootBone_" data-uid="DOTSDynamicBone.Particle.IsRootBone*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_IsRootBone_DOTSDynamicBone_Particle__Unity_Entities_Entity__System_Boolean__" data-uid="DOTSDynamicBone.Particle.IsRootBone(DOTSDynamicBone.Particle@,Unity.Entities.Entity@,System.Boolean@)">
+  IsRootBone(ref Particle, in Entity, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if a Particle is a RootBone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsRootBone(ref Particle p, in Entity rootBone, out bool m_isRootBone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>reference particle to check</p>
+</dd>
+    <dt><code>rootBone</code> <span class="xref">Entity</span></dt>
+    <dd><p>RootBone for comparison</p>
+</dd>
+    <dt><code>m_isRootBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>resulting output</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_IsRootBone_" data-uid="DOTSDynamicBone.Particle.IsRootBone*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_IsRootBone_Unity_Entities_Entity__System_Boolean__" data-uid="DOTSDynamicBone.Particle.IsRootBone(Unity.Entities.Entity@,System.Boolean@)">
+  IsRootBone(in Entity, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IsRootBone(in Entity rootBone, out bool m_isRootBone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rootBone</code> <span class="xref">Entity</span></dt>
+    <dd></dd>
+    <dt><code>m_isRootBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_IsRootLikeBone_" data-uid="DOTSDynamicBone.Particle.IsRootLikeBone*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_IsRootLikeBone_DOTSDynamicBone_Particle__System_Boolean__" data-uid="DOTSDynamicBone.Particle.IsRootLikeBone(DOTSDynamicBone.Particle@,System.Boolean@)">
+  IsRootLikeBone(ref Particle, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if a Particle is RootLike (meaning it isn't the RootBone but has similar characteristics)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsRootLikeBone(ref Particle p, out bool m_isRootLike)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd><p>reference particle to check</p>
+</dd>
+    <dt><code>m_isRootLike</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>resulting output</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_IsRootLikeBone_" data-uid="DOTSDynamicBone.Particle.IsRootLikeBone*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_IsRootLikeBone_System_Boolean__" data-uid="DOTSDynamicBone.Particle.IsRootLikeBone(System.Boolean@)">
+  IsRootLikeBone(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IsRootLikeBone(out bool m_isRootLike)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m_isRootLike</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_SwapParentIndicies_" data-uid="DOTSDynamicBone.Particle.SwapParentIndicies*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_SwapParentIndicies" data-uid="DOTSDynamicBone.Particle.SwapParentIndicies">
+  SwapParentIndicies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwapParentIndicies()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_ToggleExclude_" data-uid="DOTSDynamicBone.Particle.ToggleExclude*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_ToggleExclude_DOTSDynamicBone_Particle__" data-uid="DOTSDynamicBone.Particle.ToggleExclude(DOTSDynamicBone.Particle@)">
+  ToggleExclude(ref Particle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void ToggleExclude(ref Particle p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="DOTSDynamicBone.Particle.html">Particle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DOTSDynamicBone_Particle_Verify_" data-uid="DOTSDynamicBone.Particle.Verify*"></a>
+
+  <h3 id="DOTSDynamicBone_Particle_Verify" data-uid="DOTSDynamicBone.Particle.Verify">
+  Verify()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies if some important values are valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Verify()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

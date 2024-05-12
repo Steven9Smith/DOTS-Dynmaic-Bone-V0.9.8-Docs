@@ -1,0 +1,1258 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TransformsExtensions | DOTS Dynamic Bone V0.9.8 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TransformsExtensions | DOTS Dynamic Bone V0.9.8 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="DOTS Dynamic Bone V0.9.8">
+            DOTS Dynamic Bone V0.9.8
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Egg.Extensions.Transforms.TransformsExtensions">
+
+
+
+  <h1 id="Egg_Extensions_Transforms_TransformsExtensions" data-uid="Egg.Extensions.Transforms.TransformsExtensions" class="text-break">
+Class TransformsExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Egg.html">Egg</a>.<a class="xref" href="Egg.Extensions.html">Extensions</a>.<a class="xref" href="Egg.Extensions.Transforms.html">Transforms</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EggExtensions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TransformsExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TransformsExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_Create_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_Create_Unity_Mathematics_float3_Unity_Mathematics_quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create(Unity.Mathematics.float3,Unity.Mathematics.quaternion)">
+  Create(float3, quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalToWorld Create(float3 position, quaternion rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_Create_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_Create_Unity_Mathematics_float3_Unity_Mathematics_quaternion_System_Single_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create(Unity.Mathematics.float3,Unity.Mathematics.quaternion,System.Single)">
+  Create(float3, quaternion, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalToWorld Create(float3 position, quaternion rotation, float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_Create_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_Create_Unity_Mathematics_float3_Unity_Mathematics_quaternion_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create(Unity.Mathematics.float3,Unity.Mathematics.quaternion,Unity.Mathematics.float3)">
+  Create(float3, quaternion, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalToWorld Create(float3 position, quaternion rotation, float3 scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_Create_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_Create_Unity_Mathematics_float3_Unity_Mathematics_quaternion_Unity_Mathematics_float3_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.Create(Unity.Mathematics.float3,Unity.Mathematics.quaternion,Unity.Mathematics.float3,Unity.Mathematics.float3)">
+  Create(float3, quaternion, float3, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalToWorld Create(float3 position, quaternion rotation, float3 localScale, float3 lossyScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+    <dt><code>localScale</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>lossyScale</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_FromToRotation_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.FromToRotation*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_FromToRotation_Unity_Mathematics_float3_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.FromToRotation(Unity.Mathematics.float3,Unity.Mathematics.float3)">
+  FromToRotation(float3, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static quaternion FromToRotation(float3 from, float3 to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_GetTRSMatrix_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.GetTRSMatrix*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_GetTRSMatrix_Unity_Mathematics_RigidTransform_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.GetTRSMatrix(Unity.Mathematics.RigidTransform,Unity.Mathematics.float3)">
+  GetTRSMatrix(RigidTransform, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x4 GetTRSMatrix(RigidTransform transform, float3 scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">RigidTransform</span></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Matrix4x4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_GetTRSMatrix_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.GetTRSMatrix*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_GetTRSMatrix_Unity_Mathematics_float3_Unity_Mathematics_quaternion_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.GetTRSMatrix(Unity.Mathematics.float3,Unity.Mathematics.quaternion,Unity.Mathematics.float3)">
+  GetTRSMatrix(float3, quaternion, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x4 GetTRSMatrix(float3 translation, quaternion rotation, float3 scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>translation</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Matrix4x4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_GetTRSMatrix_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.GetTRSMatrix*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_GetTRSMatrix_UnityEngine_Transform_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.GetTRSMatrix(UnityEngine.Transform)">
+  GetTRSMatrix(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x4 GetTRSMatrix(Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Matrix4x4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_IsInvalidFloat3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.IsInvalidFloat3*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_IsInvalidFloat3_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.IsInvalidFloat3(Unity.Mathematics.float3)">
+  IsInvalidFloat3(float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>checks if a float3 either has an Inf or a NaN.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInvalidFloat3(float3 f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <span class="xref">float3</span></dt>
+    <dd><p>float3 to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this float3 is invalid, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_IsInvalidQuaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.IsInvalidQuaternion*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_IsInvalidQuaternion_Unity_Mathematics_quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.IsInvalidQuaternion(Unity.Mathematics.quaternion)">
+  IsInvalidQuaternion(quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if all the float values are 0 or is any of them contain a NaN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInvalidQuaternion(quaternion q)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>q</code> <span class="xref">quaternion</span></dt>
+    <dd><p>quaternion to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this quaternion is invalid, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_Unity_Mathematics_float3_Unity_Mathematics_float3_Unity_Mathematics_quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround(Unity.Mathematics.float3,Unity.Mathematics.float3,Unity.Mathematics.quaternion)">
+  RotateAround(float3, float3, quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 RotateAround(float3 position, float3 pivotPoint, quaternion rot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>pivotPoint</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rot</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_Unity_Transforms_LocalToWorld_Unity_Mathematics_float3_Unity_Mathematics_float3_System_Single_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround(Unity.Transforms.LocalToWorld,Unity.Mathematics.float3,Unity.Mathematics.float3,System.Single)">
+  RotateAround(LocalToWorld, float3, float3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a transform around the given Pivot point by the given angle on the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalToWorld RotateAround(LocalToWorld transform, float3 pivotPoint, float3 axis, float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+    <dt><code>pivotPoint</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>axis</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_Unity_Transforms_LocalToWorld_Unity_Mathematics_float3_Unity_Mathematics_quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround(Unity.Transforms.LocalToWorld,Unity.Mathematics.float3,Unity.Mathematics.quaternion)">
+  RotateAround(LocalToWorld, float3, quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a transform around the given Pivot point by the given rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalToWorld RotateAround(LocalToWorld transform, float3 pivotPoint, quaternion rot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+    <dt><code>pivotPoint</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>rot</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LocalToWorld</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)">
+  RotateAround(Transform, Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a transform around the given Pivot point by the given rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateAround(Transform transform, Vector3 pivotPoint, Quaternion rot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>pivotPoint</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>rot</code> <span class="xref">Quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateAround_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateAround(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  RotateAround(Transform, Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a transform around the given Pivot point by the given angle on the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateAround(Transform transform, Vector3 pivotPoint, Vector3 axis, float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>pivotPoint</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>axis</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateDirectionVector_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateDirectionVector*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateDirectionVector_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateDirectionVector(UnityEngine.Vector3,UnityEngine.Quaternion)">
+  RotateDirectionVector(Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 RotateDirectionVector(Vector3 direction, Quaternion rot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>rot</code> <span class="xref">Quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotateDirectionVector_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateDirectionVector*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotateDirectionVector_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotateDirectionVector(UnityEngine.Vector3,UnityEngine.Vector3)">
+  RotateDirectionVector(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 RotateDirectionVector(Vector3 direction, Vector3 rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundAxis_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundAxis*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundAxis_UnityEngine_Vector3_System_Single_UnityEngine_Vector3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundAxis(UnityEngine.Vector3,System.Single,UnityEngine.Vector3)">
+  RotatePointAroundAxis(Vector3, float, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 RotatePointAroundAxis(Vector3 point, float angle, Vector3 axis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>axis</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundPivot_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundPivot*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundPivot_Unity_Mathematics_float3_Unity_Mathematics_float3_Unity_Mathematics_quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundPivot(Unity.Mathematics.float3,Unity.Mathematics.float3,Unity.Mathematics.quaternion)">
+  RotatePointAroundPivot(float3, float3, quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 RotatePointAroundPivot(float3 point, float3 pivot, quaternion angles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>pivot</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>angles</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundPivot_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundPivot*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundPivot_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundPivot(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+  RotatePointAroundPivot(Vector3, Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Quaternion angles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>pivot</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>angles</code> <span class="xref">Quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundPivot_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundPivot*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_RotatePointAroundPivot_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.RotatePointAroundPivot(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+  RotatePointAroundPivot(Vector3, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Vector3 angles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>pivot</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>angles</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_ToEuler_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.ToEuler*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_ToEuler_Unity_Mathematics_float4x4_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.ToEuler(Unity.Mathematics.float4x4)">
+  ToEuler(float4x4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 ToEuler(float4x4 q)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>q</code> <span class="xref">float4x4</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_ToEuler_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.ToEuler*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_ToEuler_Unity_Mathematics_quaternion_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.ToEuler(Unity.Mathematics.quaternion)">
+  ToEuler(quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 ToEuler(quaternion q)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>q</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_TransformDirection_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.TransformDirection*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_TransformDirection_Unity_Mathematics_quaternion_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.TransformDirection(Unity.Mathematics.quaternion,Unity.Mathematics.float3)">
+  TransformDirection(quaternion, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 TransformDirection(quaternion rot, float3 vec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rot</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+    <dt><code>vec</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_TransformDirection_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.TransformDirection*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_TransformDirection_UnityEngine_Matrix4x4_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.TransformDirection(UnityEngine.Matrix4x4,Unity.Mathematics.float3)">
+  TransformDirection(Matrix4x4, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 TransformDirection(Matrix4x4 a, float3 localDirectionDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <span class="xref">Matrix4x4</span></dt>
+    <dd></dd>
+    <dt><code>localDirectionDirection</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_TransformPoint_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.TransformPoint*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_TransformPoint_Unity_Mathematics_RigidTransform_Unity_Mathematics_float3_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.TransformPoint(Unity.Mathematics.RigidTransform,Unity.Mathematics.float3,Unity.Mathematics.float3)">
+  TransformPoint(RigidTransform, float3, float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 TransformPoint(RigidTransform transform, float3 vector, float3 localScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">RigidTransform</span></dt>
+    <dd></dd>
+    <dt><code>vector</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>localScale</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_ZeroInvalidFloat3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.ZeroInvalidFloat3*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_ZeroInvalidFloat3_Unity_Mathematics_float3_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.ZeroInvalidFloat3(Unity.Mathematics.float3)">
+  ZeroInvalidFloat3(float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 ZeroInvalidFloat3(float3 f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Egg_Extensions_Transforms_TransformsExtensions_toEuler_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.toEuler*"></a>
+
+  <h3 id="Egg_Extensions_Transforms_TransformsExtensions_toEuler_Unity_Mathematics_quaternion_Unity_Mathematics_math_RotationOrder_" data-uid="Egg.Extensions.Transforms.TransformsExtensions.toEuler(Unity.Mathematics.quaternion,Unity.Mathematics.math.RotationOrder)">
+  toEuler(quaternion, RotationOrder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 toEuler(quaternion q, math.RotationOrder order = RotationOrder.Default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>q</code> <span class="xref">quaternion</span></dt>
+    <dd></dd>
+    <dt><code>order</code> <span class="xref">math</span>.<span class="xref">RotationOrder</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

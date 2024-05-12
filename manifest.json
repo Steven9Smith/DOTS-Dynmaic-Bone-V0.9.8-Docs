@@ -1,0 +1,1280 @@
+{
+  "source_base_path": "K:/Unity/Projects/DOTS_Dynamic_Bone_v0.9.8.0_With_Unity_Physics/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Collision.DOTSDynamicBoneCollider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Collision.DOTSDynamicBoneCollider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Collision.DOTSDynamicBoneCollider_BufferElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Collision.DOTSDynamicBoneCollider_BufferElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Collision.IDOTSDynamicBoneCollider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Collision.IDOTSDynamicBoneCollider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Collision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Collision.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBone.FreezeAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBone.FreezeAxis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBone.UpdateMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBone.UpdateMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneBaker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneClass.EditorParticle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneClass.EditorParticle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneClass.UpdateDataFrom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneClass.UpdateDataFrom.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneCulling_Tag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneCulling_Tag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneInitializerTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneInitializerTag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneParticle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSDynamicBoneParticle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.DOTSPlane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.DOTSPlane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.EditorDOTSDynnamicBoneCullingSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.EditorDOTSDynnamicBoneCullingSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.ExcludeEntityFromSimulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.ExcludeEntityFromSimulation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.LinkedDOTSDynamicBones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.LinkedDOTSDynamicBones.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Particle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Particle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.ParticleTransform.DOTSDynamicBoneColliderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.ParticleTransform.DOTSDynamicBoneColliderType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.ParticleTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.ParticleTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Rig.AnimatedLocalToRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Rig.AnimatedLocalToRoot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Rig.AnimatedLocalToWorld.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Rig.AnimatedLocalToWorld.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Rig.ExcludedBone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Rig.ExcludedBone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Rig.RigComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Rig.RigComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Rig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Rig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.InternalCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.InternalCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.InternalCompilerQueryAndHandleData.TypeHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.InternalCompilerQueryAndHandleData.TypeHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.InternalCompilerQueryAndHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.InternalCompilerQueryAndHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.DOTSDynamicBoneInitializationJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Baking.DOTSDynamicBoneInitializationSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Baking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Baking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.InternalCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.InternalCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.InternalCompilerQueryAndHandleData.TypeHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.InternalCompilerQueryAndHandleData.TypeHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.InternalCompilerQueryAndHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.InternalCompilerQueryAndHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.SetAnimatedLocalToXJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneAnimatedLocalToXPreUpdateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneCullingSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneCullingSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneNaturalColliderInitialization_Tag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneNaturalColliderInitialization_Tag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneNaturalCollider_Tag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneNaturalCollider_Tag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.InternalCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.InternalCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.InternalCompilerQueryAndHandleData.TypeHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.InternalCompilerQueryAndHandleData.TypeHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.InternalCompilerQueryAndHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.InternalCompilerQueryAndHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.DOTSDynamicBoneParticleResetJobOptimized.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneParticleResetSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.InternalCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.InternalCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.InternalCompilerQueryAndHandleData.TypeHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.InternalCompilerQueryAndHandleData.TypeHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.InternalCompilerQueryAndHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.InternalCompilerQueryAndHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.DOTSDynamicBoneUpdateJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneUpdateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.InternalCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.InternalCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.InternalCompilerQueryAndHandleData.TypeHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.InternalCompilerQueryAndHandleData.TypeHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.InternalCompilerQueryAndHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.InternalCompilerQueryAndHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.UpdateXTransformJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.DOTSDynamicBoneVisualPhysicalOverrideSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.InternalCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.InternalCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.InternalCompilerQueryAndHandleData.TypeHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.InternalCompilerQueryAndHandleData.TypeHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.InternalCompilerQueryAndHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.InternalCompilerQueryAndHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.DOTSDynamicBoneNaturalCollisionPhysicsVelocityJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePhysicsVelocityOverrideSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePresetPhysicsCollisionSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.DOTSDynamicBonePresetPhysicsCollisionSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.Physics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.Physics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.Systems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.Systems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DOTSDynamicBone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DOTSDynamicBone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Mathematics.ManagedStaticMathematicsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Mathematics.ManagedStaticMathematicsExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Mathematics.MathematicsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Mathematics.MathematicsExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Mathematics.StaticMathematicsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Mathematics.StaticMathematicsExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Mathematics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Mathematics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.PhysicsExcludeComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.PhysicsExcludeComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.PhysicsExcludeComponentBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.PhysicsExcludeComponentBaker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.PhysicsExcludeRequestSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.PhysicsExcludeRequestSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.PhysicsExcludeRequest_Tag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.PhysicsExcludeRequest_Tag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.PhysicsExclude_Tag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.PhysicsExclude_Tag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Transforms.TransformsExtensions.Bound.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Transforms.TransformsExtensions.Bound.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Transforms.TransformsExtensions.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Transforms.TransformsExtensions.Direction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Transforms.TransformsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Transforms.TransformsExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.Transforms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.Transforms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.StatusCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.StatusCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Egg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Egg.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unity.Entities.Animation.AnimateBlendShapeAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unity.Entities.Animation.AnimateBlendShapeAuthoring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unity.Entities.Animation.AnimatePositionAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unity.Entities.Animation.AnimatePositionAuthoring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unity.Entities.Animation.AnimateScaleAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unity.Entities.Animation.AnimateScaleAuthoring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unity.Entities.Animation.ComputeSkinMatricesBakingSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unity.Entities.Animation.ComputeSkinMatricesBakingSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unity.Entities.Animation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unity.Entities.Animation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.BitmaskUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.BitmaskUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.EditorEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.EditorEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.EntityGameObjectLinke_Managed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.EntityGameObjectLinke_Managed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.EntityObjectLink_ComponentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.EntityObjectLink_ComponentData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.EntityObjectLink_Managed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.EntityObjectLink_Managed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.EnumFlagsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.EnumFlagsAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.InGameEntitiesList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.InGameEntitiesList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurveAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurveAuthoring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurveBlobArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurveBlobArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurveComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.DOTSAnimationCurveComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.DOTSKeyframe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.DOTSKeyframe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.MathematicsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.MathematicsExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityNexus.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityNexus.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/DOTSDynamicBoneComponentDefaultExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/DOTSDynamicBoneComponentDefaultExample.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/DOTSDynamicBoneComponentPhysicsExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/DOTSDynamicBoneComponentPhysicsExample.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/DOTSDynamicBoneComponentPhysicsSetupExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/DOTSDynamicBoneComponentPhysicsSetupExample.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LinkedDOTSDynamicBoneExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/LinkedDOTSDynamicBoneExample.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/m_RigComponentEntityExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/m_RigComponentEntityExample.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/DOTSDynamicBone.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/DOTSDynamicBone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/DOTSDynamicBoneComponent.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/DOTSDynamicBoneComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Demo.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Demo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/General_Concepts.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/General_Concepts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Particle.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Particle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Project_Setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Project_Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/RigComponent.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/RigComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Simple_Animation_Demo.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Simple_Animation_Demo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Simple_Demo.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Simple_Demo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Simple_Physics_Animation_Demo.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Simple_Physics_Animation_Demo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Simple_Physics_Demo.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Simple_Physics_Demo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Systems.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Systems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
